@@ -14,7 +14,7 @@
    <main>
     <div class="contenitoreHtml">
         <h3> Linguaggio Html</h3>
-        <p>
+        <p style = "color: red;">
             Html NON è un linguaggio di programmazione, ma bensi di contenuto. <br>
                  Viene utilizzato per per strutturare la pagina, servendosi del linguaggio di CSS <br>
                  e di Javascript per curare lo stile e l'interattività <br>
@@ -45,7 +45,12 @@
             Javascript invece, è un linguaggio di programmazione utilizzato principalmente <br>
             per manipolare contenuti grazie a fuonzioni e variabili.
         </p>
-        <button onclick="bottoneNome()">Try it</button>
+        <text.input name="argomenti" id="argomentiSvolti" placeholder="Indica con un numero quanti argomenti sono stati svolti"></text.input>
+        <button onclick="argomenti()">INDOVINA</button>
+        <p id="risposta">
+
+        </p>
+
 
         <p id="nomeTesto"></p>
 
@@ -58,7 +63,25 @@
             let person = prompt("Please enter your name", "Es Mirko");
             if (person != null) {
                 document.getElementById("nomeTesto").innerHTML = "Ciao" + person + "questo è quello che ho imparato."}
+         console.log(person.length[-1])
          }
+
+         function argomenti() {
+            let argomentiSvolti = prompt ("inserisci un numero per indicare quanti argomenti sono stati svolti", "esempio: 2")
+            if (argomentiSvolti == 0){
+                document.getElementById("risposta").innerHTML = "NON DIREI PROPRIO!"
+            } else if (argomentiSvolti ==1){
+                document.getElementById("risposta").innerHTML = "MMMH non sembri riporre molta fiducia nella classe!"
+            } else if (argomentiSvolti ==2){
+                document.getElementById("risposta").innerHTML = "Puoi fare di meglio!"
+            } else if (argomentiSvolti ==3) {
+                document.getElementById("risposta").innerHTML = "ESATTO!"
+
+            } else {
+                document.getElementById("risposta").innerHTML = "Vabbé adesso esageri!"
+            }
+         }
+
             
 
             
