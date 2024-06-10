@@ -1,0 +1,12 @@
+.contenitoreHtml {
+    background-color: lightblue;
+    text-align: center;
+}
+.contenitoreCss {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+}
+
+.contenitoreJavascript {
+    color: brown;
+}

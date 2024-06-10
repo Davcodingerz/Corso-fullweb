@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <h1> Corso Full Stack Web</h1>
+    <h3> Argomenti affrontati</h3>
+   </header>
+   <main>
+    <div class="contenitoreHtml">
+        <h3> Linguaggio Html</h3>
+        <p>
+            Html NON è un linguaggio di programmazione, ma bensi di contenuto. <br>
+                 Viene utilizzato per per strutturare la pagina, servendosi del linguaggio di CSS <br>
+                 e di Javascript per curare lo stile e l'interattività <br>
+                 Nel linguaggio HTML la pagina web viene divisa in due macrosezioni, HEAD e BODY <br>
+                  L'head, contiene riferimenti della pagina che comunicano con il browser, indicando vari aspetti <br>
+                 non visualizzabili dall'interfaccia utente. <br>
+                 Nel body invece, vengono riportate tutto quel genere di informazioni e contenuti che <br>
+                 l'utente riesce a visualizzare quando accede al sito. <br>
+                 Grazie al linguaggo html possiamo avere la possibilità di utilizzare un <br> 
+                 un certo numero di funzionalità, tra cui: I titoli, i paragrafi, gli item list, i bottoni, i link etc... <br>
+                  Il body, ovvero la pagina visualizzata dall'utente, si divide a sua volta in tre sezioni: header, main e footer.
+         </p>
+    </div>
+    <Div class="contenitoreCss">
+        <p>
+            Css, a differenza di html non viene utilizzato per inserire contenuto alla pagina, <br>
+            ma per curare lo stile della stessa, con il fine di renderla più appetibile <br>
+            all'eventuale visitatore (utente). <br>
+            Il collegamento del file html con il file css avviene all'interno dell'head della pagina, in modo che sia eseguito <br>
+            prima dell'esecuzione del contenuto, dando al nostro sito, l'impatto visivo che desideriamo <br>
+            a partire dal primo momento. <br>
+            Grazie alle funzioni di CSS infatti, riusciamo a curare aspetti estetici e non, come: <br>
+            Background, colore del testo, hover, allineamento testo etc.
+        </p>
+     </Div>
+     <div class="contenitoreJavascript">
+        <p>
+            Javascript invece, è un linguaggio di programmazione utilizzato principalmente <br>
+            per manipolare contenuti grazie a fuonzioni e variabili.
+        </p>
+        <button onclick="bottoneNome()">Try it</button>
+
+        <p id="nomeTesto"></p>
+
+     </div>
+
+   </main>
+    
+    <script>
+         function bottoneNome() {
+            let person = prompt("Please enter your name", "Es Mirko");
+            if (person != null) {
+                document.getElementById("nomeTesto").innerHTML = "Ciao" + person + "questo è quello che ho imparato."}
+         }
+            
+
+            
+    </script>
+</body>
+</html>
